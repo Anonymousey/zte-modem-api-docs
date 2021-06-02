@@ -57,7 +57,7 @@ Content-Type: text/plain
 {"modem_main_state":"modem_init_complete","pin_status":"0","loginfo":"no","new_version_state":"0","current_upgrade_state":"","is_mandatory":""}
 ```
 
-In general, the Beeline API uses HTTP POST requests with `x-www-form-urlencoded` arguments and JSON responses in `text/plain` format. 
+In general, the ZTE API uses HTTP POST requests with `x-www-form-urlencoded` arguments and JSON responses in `text/plain` format. 
 
 API authentication is using preliminary request that create authenticated sessions for limited time.
 
