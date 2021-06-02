@@ -2,10 +2,10 @@
   <br>
   <img src="source/images/logo_en.png" alt="ZTE" width="200">
   <br>
-  <a href="https://mientz.github.io/zte-modem-api-docs/" target="_blank">ZTE Modem API Documentations</a>
+  <a href="https://mientz.github.io/zte-modem-api-docs/" target="_blank">ZTE Modem API Documentation</a>
   <br>
 </h2>
-<h4 align="center">My attempt at reverse engineering the modem Web GUI</h4>
+<h4 align="center">Slowly reverse engineering the ZTE MC801 Router Web GUI</h4>
 
 <p align="center">
   <a href="LICENSE">
@@ -27,35 +27,34 @@
 </p>
 
 ## ZTE API
-An API for ZTE GSM & LTE Modem with Web GUI / RNDIS / CDC Ethernet mode. You can use the API available in this documentation to make a WAN connection, send SMS, get various information about your modem, and tons of other stuff.
+An API for the ZTE MC801 Router. (Web interface) You can use the API available in this documentation to make or send SMS, get various information about your modem.
 
 ## Usage
-Visit [https://mientz.github.io/zte-modem-api-docs/index.html](https://mientz.github.io/zte-modem-api-docs/index.html)
+Visit [https://Anonymousey.github.io/zte-modem-api-docs/index.html](https://Anonymousey.github.io/zte-modem-api-docs/index.html)
 
 ## Tested on:
 
 ### GSM/LTE Modems:
-- ZTE MF90 Bolt
-- ZTE MF90+ Beeline
+- ZTE MC801 (5G Non-SA Model)
+- ZTE MC801A (5G SA Model. Untested. 5G SA API stuff will be missing if it even works, if you use this modem and can grab the 5G SA API calls from wireshark then i'll add them to the docs) 
 
-*Probably will work for other ZTE modem that use Web GUI*
 ### Progress:
 - [x] Authentication
-- [x] GSM & LTE Properties
-  - [x] GSM network properties
+- [ ] GSM & LTE Properties
+  - [ ] GSM network properties
   - [ ] Carrier network selections
-- [x] PPP properties
-- [x] WAN connection properties
-- [x] Messaging system
+- [ ] PPP properties
+- [ ] WAN connection properties
+- [ ] Messaging system
 - [ ] Wireless-LAN properties
 - [ ] Device properties
 - [ ] GSM-7 & UCS-2/Unicode documentations
 - [ ] Error & response documentations
 
 ## Credits
+[Mientz - Amin Wijaya](https://mientz.github.io/zte-modem-api-docs/index.html#introduction) for the ZTE API Documentation so far.
 
 A heartfelt thankyou to [slatedocs](https://github.com/slatedocs) for their [slate](https://github.com/slatedocs/slate) static API documentation builder
 
 ## License
 [Apache-2.0](LICENSE) - Mientz - 2021
-
