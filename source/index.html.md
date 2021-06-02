@@ -114,7 +114,7 @@ X-XSS-Protection: 1
 }
 ```
 
-ZTE API didn't support any in-flight authorization, instead it relies on device sessions in header (eg. Cookie: zwsd="1dbcbdaa196026e26e999387e7bc1725) looks like MD5. Not sure how its generated. 
+ZTE API didn't support any in-flight authorization, instead it relies on a vaild single user session in the header (eg. Cookie: zwsd="1dbcbdaa196026e26e999387e7bc1725) it won't let you log more than once as it generates a new cookie and makes the previous one invalid. Looks like MD5. Not sure how its generated. 
 
 <aside class="notice">
 The duration of authenticated session is still <b>unknown!</b> The workaround to that limitation you can schedule recurring AUTH requests or do authentication as preliminary for every request.
